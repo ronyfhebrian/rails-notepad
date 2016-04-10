@@ -4,12 +4,13 @@
   %title Notepad by Rony Fhebrian
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
   = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  %link{ rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" }
   = csrf_meta_tags
 
 %body
   %header
     .header_inner
-      = link_to image_tag('logo.svg'), root_path, id: "logo"
+      = link_to "NOTEPAD BY RONY FHEBRIAN", root_path, id: "logo"
       %nav
         - if user_signed_in?
           = link_to "Note Baru", new_note_path
