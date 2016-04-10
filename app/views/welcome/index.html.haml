@@ -1,2 +1,32 @@
-%h1 Welcome#index
-%p Find me in app/views/welcome/index.html.erb
+#banner
+  .banner_content
+    %h1 Notepad by Rony Fhebrian
+    %p Penyimpanan catatan online seperti Evernote, tapi berbeda sikit
+    %button= link_to "Daftar", new_user_registration_path
+
+#testimonial
+  .wrapper
+    %p.quote "Aplikasi notepad terkeren di dunia "
+    %p.name "Rony Fhebrian"
+
+#callouts
+  .callout_inner
+    .wrapper
+      .callout
+        %h2 Catatan
+        %p Occupy listicle pop-up direct trade waistcoat, authentic fap. Distillery small batch yr tacos kinfolk normcore, fixie plaid wolf chicharrones XOXO. Lumbersexual wolf lo-fi lomo irony try-hard, twee fap deep v selvage.
+      .callout
+        %h2 Fitur
+        %p Occupy listicle pop-up direct trade waistcoat, authentic fap. Distillery small batch yr tacos kinfolk normcore, fixie plaid wolf chicharrones XOXO. Lumbersexual wolf lo-fi lomo irony try-hard, twee fap deep v selvage.
+      .callout
+        %h2 Tentang
+        %p Occupy listicle pop-up direct trade waistcoat, authentic fap. Distillery small batch yr tacos kinfolk normcore, fixie plaid wolf chicharrones XOXO. Lumbersexual wolf lo-fi lomo irony try-hard, twee fap deep v selvage.
+
+#bottom_cta
+  .wrapper
+    %h2 Mendaftar!
+    %p Daftar di sini jika ingin merasakan memiliki Note
+    %button= link_to "Daftar", new_user_registration_path
+
+%footer
+  %p &copy; Rony Fhebrian
