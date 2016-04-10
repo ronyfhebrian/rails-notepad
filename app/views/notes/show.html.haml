@@ -2,3 +2,5 @@
 %p= @note.content
 
 = link_to "Semua Note", notes_path
+= link_to "Edit", edit_note_path(@note)
+= link_to "Hapus", note_path(@note), method: :delete, data: { confirm: "Apakah kamu yakin?" }
